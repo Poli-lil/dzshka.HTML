@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    body {
+        font-family: Arial;
+        background: #eee;
+    }
+
+    .container {
+        width: 800px;
+        margin: 20px auto;
+    }
+
+    .card {
+        width: 30%;
+        display: inline-block;
+        margin: 1%;
+        position: relative;
+        background: white;
+    }
+
+    .card img {
+        width: 100%;
+        display: block;
+    }
+
+    .card::after {
+        content: "";
+        display: block;
+        height: 4px;
+        background: rgb(229, 179, 86);
+    }
+
+    .ovv {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background: rgba(0,0,0,0.7);
+        color: white;
+        padding: 10px;
+        opacity: 0; /* делает прозрачным */
+    }
+
+    .card:hover .ovv {
+        opacity: 1;
+    }
+
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+    <div class="card">
+        <img src="..//dz8/Q4uoYS3Q.jpg">
+        <div class="ovv">
+            <b>Project 1</b><br>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium, totam.
+            </p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="..//dz8/Q4uoYS3Q.jpg">
+        <div class="ovv">
+            <b>Project 2</b><br>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, natus.
+            </p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="..//dz8/Q4uoYS3Q.jpg">
+        <div class="ovv">
+            <b>Project 3</b><br>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, possimus!
+            </p>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
