@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+body{
+    text-align:center;
+    background-color: rgb(136, 115, 220);
+}
+
+.icons{
+    margin-top:50px;
+}
+
+.icons img{
+    width:80px;
+    margin:10px;
+    position:relative;
+    animation: icon-move 2s forwards;
+}
+
+.icons img:nth-child(1){animation-delay:0s;}
+.icons img:nth-child(2){animation-delay:0.5s;}
+.icons img:nth-child(3){animation-delay:1s;}
+.icons img:nth-child(4){animation-delay:1.5s;}
+
+@keyframes icon-move{
+    from{
+        bottom:-150px;
+    }
+    to{
+        bottom:0;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<h1>Hello, my site!</h1>
+
+<div class="icons">
+<img src="..//pract-anim/paper.png">
+<img src="..//pract-anim/pencil.png">
+<img src="..//pract-anim/pallete.png">
+<img src="..//pract-anim/book.png">
+</div>
+
+</body>
+</html>
+
+<!-- .icons img:nth-child(1){animation-delay:0s;}
+.icons img:nth-child(2){animation-delay:0.5s;}
+.icons img:nth-child(3){animation-delay:1s;}
+.icons img:nth-child(4){animation-delay:1.5s;}
+ 
+то что находится в классе иконки, потом нумирация всего и сколько секунд задержки перед началом -->
