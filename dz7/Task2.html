@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #eee;
+        }
+
+        .menu {
+            background: #2e8b57;
+            padding: 0;
+        }
+
+        .menu ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .menu li {
+            position: relative;
+        }
+
+        .menu a {
+            display: block;
+            padding: 15px 25px;
+            color: white;
+            text-decoration: none;
+        }
+
+        
+        .menu li:hover {
+            background: #256f46;
+        }
+
+        
+        .menuu {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: #3aa76d;
+            display: none;
+            flex-direction: column;
+            min-width: 150px;
+        }
+
+        .menuu li:hover {
+            background: #36ab6d;
+        }
+
+        .menu li:hover.menuu {
+            display: block;
+        }
+
+       
+        .menuu .menuu {
+            top: 0;
+            left: 100%;
+        }
+
+        
+        .content {
+            padding: 20px;
+            width: 600px;
+            margin: 20px auto;
+            background: white;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <nav class="menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+
+            <li>
+                <a href="#">Categories</a>
+                <ul class="menuu">
+                    <li>
+                        <a href="#">Men</a>
+                        <ul class="menuu">
+                            <li><a href="#">Dress</a></li>
+                            <li><a href="#">Pants</a></li>
+                            <li><a href="#">Shoes</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Women</a></li>
+                    <li><a href="#">Kids</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contacts</a></li>
+        </ul>
+    </nav>
+
+    <div class="content">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor est facere ut cupiditate assumenda, optio ad,
+            magni explicabo nulla vero alias corrupti minus ratione deleniti fuga odit perferendis commodi soluta nam
+            minima vitae! Quisquam dicta labore maiores maxime, molestias nulla reprehenderit quod numquam suscipit
+            voluptas ipsa dolore autem praesentium recusandae deleniti illo id, enim consectetur nam quasi
+            exercitationem nobis? Saepe suscipit ipsum nisi, sunt voluptates architecto, aspernatur quisquam quas
+            inventore non excepturi veniam nostrum nemo, vel repellat. Iure officiis accusantium odio deserunt dolores
+            necessitatibus nesciunt consequuntur dolor quod! Facere est quaerat debitis labore vero ut molestiae
+            adipisci veniam officia aliquid.
+        </p>
+    </div>
+
+</body>
+
+</html>
