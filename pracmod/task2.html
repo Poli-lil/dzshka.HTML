@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task2</title>
+    <style>
+        body {
+            margin: 0;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        .sidebar {
+            position: fixed;
+            width: 60px;
+            height: 100vh;
+            background: #595858;
+            overflow: hidden;
+            transition: width 1s;
+        }
+
+        .sidebar:hover {
+            width: 220px;
+        }
+
+        .menu-item {
+            color: rgb(133, 131, 131);
+            padding: 15px;
+            white-space: nowrap;
+            transition: background 0.3s;
+        }
+
+        .menu-item:hover {
+            background: #2d2c2c;
+        }
+
+        .content {
+            margin-left: 60px;
+            padding: 20px;
+        }
+
+        .sid:hover.content {
+            margin-left: 220px;
+            transition: margin-left 1s;
+        }
+
+        h2 {
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="sid">
+        <div class="menu-item">MENU</div>
+        <div class="menu-item">Edit</div>
+        <div class="menu-item">Favorites</div>
+        <div class="menu-item">History</div>
+        <div class="menu-item">Security</div>
+        <div class="menu-item">Settings</div>
+    </div>
+
+    <div class="content">
+        <h1>WHAT IS LOREM IPSUM?</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, recusandae voluptas itaque officia
+            quibusdam iure earum autem repellendus aperiam eos? Cumque omnis voluptatem dicta facere optio libero esse
+            enim quas.</p>
+
+        <h2>WHY DO WE USE IT?</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore voluptas quia itaque sapiente cumque! Non
+            natus voluptate ea. Nemo, dolores vero aliquid omnis dicta error dignissimos inventore nostrum laborum ad.
+        </p>
+
+        <h2>WHERE DOES IT COME FROM?</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ducimus? Alias modi, perspiciatis enim,
+            sapiente laborum rem error impedit, molestias ipsam nesciunt non. Dolorem non, suscipit dicta eligendi illum
+            deserunt.</p>
+
+        <h2>WHERE CAN I GET SOME?</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum, tempore suscipit obcaecati reiciendis
+            officiis nobis rem mollitia vel nulla quasi, earum beatae. Praesentium deleniti temporibus quidem sunt
+            dolores officiis cum?</p>
+    </div>
+
+</body>
+
+</html>
