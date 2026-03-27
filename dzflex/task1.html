@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+    <style>
+        body {
+            margin: 0;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background: #e5e5e5;
+        }
+
+        .container {
+            max-width: 1200px;
+            min-width: 600px;
+            margin: 0 auto;
+            background: white;
+        }
+
+        header {
+            background: #6c6c6c;
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            margin-left: 15px;
+            text-decoration: none;
+        }
+
+        .content {
+            display: flex;
+            padding: 20px;
+            gap: 20px;
+        }
+
+        .main {
+            flex: 3;
+        }
+
+        .card {
+            background: #f8f8f8;
+            padding: 10px;
+        }
+
+        .card img {
+            width: 100%;
+            margin: 10px;
+        }
+
+        .sid {
+            flex: 1;
+        }
+
+        .sid-box {
+            background: #f3f3f3;
+            padding: 15px;
+        }
+
+        .event {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            background: white;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        .icon {
+            width: 15px;
+            height: 15px;
+            border-radius: 30%;
+            background: #dad5d5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+            font-size: 10px;
+        }
+
+        .quote {
+            margin-top: 15px;
+            font-style: italic;
+            color: #646262;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <div class="logo">Lorem Site</div>
+            <nav>
+                <a href="#">News</a>
+                <a href="#">Events</a>
+                <a href="#">Courses</a>
+                <a href="#">Jobs</a>
+                <a href="#">Tests</a>
+            </nav>
+        </header>
+
+        <div class="content">
+            <div class="main">
+                <div class="card">
+                    <h2>What is Lorem Ipsum?</h2>
+                    <p style="color: rgb(158, 157, 157);">March 27, 2026</p>
+
+                    <img src="..//dzflex/html5img.png">
+
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim possimus rem officia a inventore
+                        dicta velit et numquam consectetur ipsum architecto nostrum neque, tempore quis cum maiores,
+                        beatae magnam. Impedit provident suscipit sit dolores alias dolor possimus autem atque ab! Vel
+                        error hic aut. Saepe cumque magni expedita? Expedita quasi dolores, repellendus odit laudantium
+                        eius natus cupiditate blanditiis consectetur rem omnis obcaecati sit quaerat ut? Maiores
+                        dignissimos excepturi neque mollitia possimus perspiciatis aperiam eos maxime deserunt
+                        recusandae amet fugit, id adipisci minima deleniti vero est iusto error esse. Veniam quidem
+                        veritatis officia nisi obcaecati magnam hic qui quibusdam pariatur impedit.
+                    </p>
+                </div>
+            </div>
+
+            <div class="sid">
+                <div class="sid-box">
+                    <h3>Events</h3>
+
+                    <div class="event">
+                        <div class="icon"><img src="..//dzflex/calendar_7.png" alt="calendar"></div>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere sed aut animi voluptates
+                        tempore beatae?
+                    </div>
+
+                    <div class="event">
+                        <div class="icon"><img src="..//dzflex/calendar_27.png" alt="hot"></div>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, nemo!
+                    </div>
+
+                    <div class="event">
+                        <div class="icon"><img src="..//dzflex/calendar_7.png" alt=""></div>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores, animi tempore.
+                    </div>
+
+                    <div class="event">
+                        <div class="icon"><img src="..//dzflex/calendar_19.png" alt=""></div>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt corporis voluptas quaerat
+                        labore minus. Quam, eum.
+                    </div>
+
+                    <div class="quote">
+                        “Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos laborum eligendi voluptates animi
+                        aut, sed repellendus ipsum veritatis laudantium distinctio similique blanditiis neque obcaecati
+                        eum velit ducimus commodi molestias dolorem ad! Explicabo magni provident odio necessitatibus
+                        non, tenetur error aliquam corporis labore enim at aperiam delectus porro excepturi optio quo..”
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
