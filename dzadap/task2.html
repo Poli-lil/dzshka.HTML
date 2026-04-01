@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>222</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f0f0f0;
+        }
+
+        .header {
+            background: linear-gradient(to right, #1e90ff, #00bcd4);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 24px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 20px auto;
+            background: #e9e9e9;
+            padding: 20px;
+        }
+
+        .content {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 20px;
+        }
+
+        .text h2 {
+            margin-top: 0;
+        }
+
+        .text p {
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .images {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .image-box {
+            background: #2c3e50;
+            border-radius: 6px;
+            overflow: hidden;
+            color: white;
+            font-size: 12px;
+        }
+
+        .image-box img {
+            width: 100%;
+            display: block;
+        }
+
+        .caption {
+            padding: 8px;
+            text-align: center;
+        }
+
+        @media (max-width: 800px) {
+            .content {
+                grid-template-columns: 1fr;
+            }
+
+            .images {
+                flex-direction: row;
+            }
+
+            .image-box {
+                width: 50%;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .images {
+                flex-direction: column;
+            }
+
+            .image-box {
+                width: 100%;
+            }
+
+            .text p {
+                font-size: 13px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">котики</div>
+
+    <div class="container">
+        <div class="content">
+
+            <div class="text">
+                <h2>Cat</h2>
+                <p>
+                    The cat (Felis catus) is a small carnivorous mammal. It is the only domesticated species in the
+                    family Felidae and often referred to as the domestic cat to distinguish it from wild members of the
+                    family. The cat is either a house cat, kept as a pet, or a feral cat, freely ranging and avoiding
+                    human contact.[5] A house cat is valued by humans for companionship and for its ability to hunt
+                    rodents. About 60 cat breeds are recognized by various cat registries.
+
+                </p>
+
+                <p>
+                    Cats are similar in anatomy to the other felid species, with a strong flexible body, quick reflexes,
+                    sharp teeth and retractable claws adapted to killing small prey. They are predators who are most
+                    active at dawn and dusk (crepuscular). Cats can hear sounds too faint or too high in frequency for
+                    human ears, such as those made by mice and other small animals. Compared to humans, they see better
+                    in the dark (they see in near total darkness) and have a better sense of smell, but poorer color
+                    vision. Cats, despite being solitary hunters, are a social species. Cat communication includes the
+                    use of vocalizations including mewing, purring, trilling, hissing, growling and grunting as well as
+                    cat-specific body language.[7] Cats also communicate by secreting and perceiving pheromones.
+
+                </p>
+
+                <p>
+                    Female domestic cats can have kittens from spring to late autumn, with litter sizes ranging from two
+                    to five kittens. Domestic cats can be bred and shown as registered pedigreed cats, a hobby known as
+                    cat fancy. Failure to control the breeding of pet cats by spaying and neutering, as well as
+                    abandonment of pets, has resulted in large numbers of feral cats worldwide, contributing to the
+                    extinction of entire bird species, and evoking population control.
+
+                </p>
+            </div>
+
+            <div class="images">
+
+                <div class="image-box">
+                    <img src="..//dzadap/cat2.jpg" alt="cat">
+                    <div class="caption">
+                        A tabby cat in snowy weather
+                    </div>
+                </div>
+
+                <div class="image-box">
+                    <img src="..//dzadap/cat1.jpg" alt="cat">
+                    <div class="caption">
+                        The hooked papillae on a cat's tongue act like a hairbrush
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

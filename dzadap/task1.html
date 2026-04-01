@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1111</title>
+<style>
+    body {
+        margin: 0;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        background: #f7efef;
+    }
+
+    .container {
+        max-width: 900px;
+        margin: 40px auto;
+        padding: 20px;
+    }
+
+    .card {
+        background: #0d4b47;
+        color: white;
+        padding: 40px;
+        border-radius: 6px;
+    }
+
+    .breadcrumbs {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+    h1 {
+        font-size: 36px;
+        line-height: 1.3;
+        margin-bottom: 30px;
+    }
+
+    .meta {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .author {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .author img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    .meta-info {
+        font-size: 14px;
+    }
+    @media (max-width: 600px) {
+        .card {
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 24px;
+        }
+
+        .meta {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 10px;
+        }
+    }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <div class="card">
+        <div class="breadcrumbs">Home / Articles /</div>
+
+        <h1>
+            The Difference Between <br>
+            Responsive and <br>
+            Adaptive Design
+        </h1>
+
+        <div class="meta">
+            <div class="author">
+                <img src="..//dzadap/account.png" alt="avatar">
+                <div>
+                    <div class="meta-info">Author</div>
+                    <strong>Geoff Graham</strong>
+                </div>
+            </div>
+
+            <div class="meta-info">
+                <strong>49 Comments</strong><br>
+                Go to comments
+            </div>
+
+            <div class="meta-info">
+                <strong>Published</strong><br>
+                Nov 11, 2018
+            </div>
+
+            <div class="meta-info">
+                <strong>Updated</strong><br>
+                Nov 17, 2018
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
