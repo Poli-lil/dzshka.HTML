@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f2f2f2;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+}
+
+input:focus {
+    border-bottom: 1px solid #18a395;
+}
+
+.checkbox-group {
+    margin-top: 15px;
+}
+
+.checkbox-group label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.submit-btn {
+    margin-top: 20px;
+    padding: 12px 30px;
+    background: #009688;
+    color: white;
+    border: none;
+    float: right;
+}
+
+.submit-btn:hover {
+    background: #00796b;
+}
+
+@media (max-width: 900px) {
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+
+    input, select {
+        font-size: 14px;
+    }
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+<form>
+
+<div class="form-grid">
+
+<div>
+    <h2>Registration form</h2>
+
+    <div class="form-group">
+        <input type="text" placeholder="Username" required>
+    </div>
+
+    <div class="form-group">
+        <input type="email" placeholder="Email address" required>
+    </div>
+
+    <div class="form-group">
+        <input type="password" placeholder="Password" required>
+    </div>
+
+    <div class="form-group">
+        <input type="password" placeholder="Confirm password" required>
+    </div>
+</div>
+
+<div>
+    <h2>Personal details</h2>
+
+    <div class="form-group">
+        <input type="text" placeholder="First name" required>
+    </div>
+
+    <div class="form-group">
+        <input type="text" placeholder="Last name" required>
+    </div>
+
+    <div class="form-group">
+        <select>
+            <option>Male</option>
+            <option>Female</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <input type="date">
+    </div>
+</div>
+
+</div>
+
+<div class="checkbox-group">
+    <label>
+        <input type="checkbox"> I want to receive news and special offers
+    </label>
+
+    <label>
+        <input type="checkbox" required> I agree with the Terms and Conditions
+    </label>
+</div>
+
+<button class="submit-btn">SUBMIT</button>
+
+</form>
+
+</div>
+
+    
+</body>
+</html>
+
+<!-- option - Он представляет один вариант выбора в списке.
+label - для подписи элементов формы например, полей ввода
+placeholder - для подсказки внутри поля ввода (полу-прозрачная) -->
+

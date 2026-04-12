@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+    font-family: Arial;
+    padding: 20px;
+}
+
+.input {
+    padding: 10px;
+    margin: 5px;
+    border: 2px solid gray;
+}
+
+.valid {
+    border-color: green;
+}
+
+.invalid {
+    border-color: red;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    color: white;
+    margin: 5px;
+}
+
+.green {
+    background: green;
+}
+
+.red {
+    background: crimson;
+}
+
+.hover:hover {
+    opacity: 0.7;
+}
+
+.disabled {
+    background: gray;
+}
+
+.cir {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+}
+
+textarea {
+    width: 300px;
+    height: 100px;
+    margin-top: 10px;
+}
+    </style>
+</head>
+<body>
+    <h3>Inputs</h3>
+<input class="input" placeholder="Enter text">
+<input class="input valid" value="valid text">
+<input class="input invalid" value="invalid text">
+
+<h3>Checkbox</h3>
+<label><input type="checkbox" checked> Subscribe</label>
+<label><input type="checkbox"> Subscribe</label>
+
+<h3>Radio</h3>
+<label><input type="radio" name="g" checked> Male</label>
+<label><input type="radio" name="g"> Female</label>
+
+<h3>Buttons</h3>
+<button class="btn green">Active</button>
+<button class="btn green hover">Hover</button>
+<button class="btn red">Danger</button>
+<button class="btn red hover">Hover</button>
+<button class="btn disabled">Disabled</button>
+
+<h3>Circle buttons</h3>
+<button class="cir green">+</button>
+<button class="cir red">-</button>
+
+<h3>Textarea</h3>
+<textarea placeholder="Enter text..."></textarea>
+</body>
+</html>
