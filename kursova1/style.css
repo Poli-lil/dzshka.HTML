@@ -10,7 +10,7 @@ body {
   color: white;
 }
 
-/* HEADER */
+
 header {
   position: sticky;
   top: 0;
@@ -35,7 +35,7 @@ nav a {
   font-size: 1rem;
 }
 
-/* HERO */
+
 .hero {
   height: 70vh;
   background: url("images/bg.jpg") center/cover no-repeat;
@@ -74,13 +74,13 @@ nav a {
   color: white;
 }
 
-/* CONTAINER */
+
 .container {
   width: 90%;
   margin: 2rem auto;
 }
 
-/* ROW */
+
 .row {
   margin-bottom: 2rem;
 }
@@ -89,7 +89,7 @@ nav a {
   margin-bottom: 1rem;
 }
 
-/* MOVIES */
+
 .movies {
   display: flex;
   gap: 1rem;
@@ -115,7 +115,7 @@ nav a {
   object-fit: cover;
 }
 
-/* HOVER */
+
 .movie:hover {
   transform: scale(1.15);
   z-index: 2;
@@ -135,7 +135,7 @@ nav a {
   opacity: 1;
 }
 
-/* FORM */
+
 form {
   max-width: 400px;
   margin: auto;
@@ -163,7 +163,7 @@ footer {
   margin-top: 3rem;
 }
 
-/* ADAPTIVE */
+
 @media (max-width: 768px) {
   .movie {
     flex: 0 0 150px;
